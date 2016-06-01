@@ -6,6 +6,9 @@ import com.kmangutov.restexample.views.ListActivity;
 
 import java.util.List;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -22,6 +25,62 @@ public class ListPresenter {
 
         mView = view;
         mForum = forum;
+    }
+
+    public void loadPostsSyncronously() {
+        // Synchronous Call in Retrofit 2.0
+
+        try {
+            Call<List<Post>> call = mForum.getApi().getPostsWithoutObservable();
+            Response<List<Post>> repo = call.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loadPostsAsyncronously() {
+        // Asynchronous Call in Retrofit 2.0
+
+        Call<List<Post>> call = mForum.getApi().getPostsWithoutObservable();
+        call.enqueue(new Callback<List<Post>>() {
+            @Override
+            public void onResponse(Call<List<Post>> call, Response<List<Post>> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<List<Post>> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public void postPostsSyncronously() {
+        // Synchronous Call in Retrofit 2.0
+
+        try {
+            Call<Post> call = mForum.getApi().postPostWithoutObservable(new Post());
+            Response<Post> repo = call.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void postPostsAsyncronously() {
+        // Asynchronous Call in Retrofit 2.0
+
+        Call<Post> call = mForum.getApi().postPostWithoutObservable(new Post());
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+
+            }
+        });
     }
 
     public void loadPosts() {
@@ -43,7 +102,6 @@ public class ListPresenter {
 
                     @Override
                     public void onNext(List<Post> posts) {
-
                         mView.displayPosts(posts);
                     }
                 });

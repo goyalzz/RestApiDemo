@@ -70,7 +70,6 @@ public class DetailPresenter {
 
                     @Override
                     public void onNext(List<Comment> comments) {
-
                         mView.displayComments(comments);
                     }
                 });

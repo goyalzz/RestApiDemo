@@ -9,13 +9,6 @@
         <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_88bb13ab670651c23127ad7a11df6ce3cf206d64/classes.dex" />
     </item>
     <item
-        jar="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="927e8ef5711b115b65b2f35495d77352be2b3c09">
-        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.reactivex-rxandroid-1.2.0_b0a1b90241399f1bfac970d3c993673db076d32d/classes.dex" />
-    </item>
-    <item
         jar="/home/goyalzz/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
         jumboMode="true"
         revision="23.0.3"
@@ -44,11 +37,11 @@
         <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_bdbd66d6dd87d26c0ece4344df2985e05e8bedd0/classes.dex" />
     </item>
     <item
-        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-1.9.0_62888eafb8ff9fa918ca2f601de36c3d70608e47/classes.dex" />
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.2_7e84edb499517a5c4b9416c9e77b6a4cdf129b7a/classes.dex" />
     </item>
     <item
         jar="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
@@ -65,18 +58,46 @@
         <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_e72f3f465c6a4b693debdae9f0fbcdc2fa8140a3/classes.dex" />
     </item>
     <item
+        jar="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_97780bd4ca1c0dbf850768fac1083d6b8b1985b6/classes.dex" />
+    </item>
+    <item
+        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.2_0e8ce89d47dcb88b6cd391a0e010708ca0c4dd21/classes.dex" />
+    </item>
+    <item
+        jar="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="927e8ef5711b115b65b2f35495d77352be2b3c09">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.reactivex-rxandroid-1.2.0_b0a1b90241399f1bfac970d3c993673db076d32d/classes.dex" />
+    </item>
+    <item
+        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_5bd0301919a16a7e76a7d54ca91154f44cbb4bbe/classes.dex" />
+    </item>
+    <item
+        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_fa059f76ad78a7e819e68857f5bffb323dbbe918/classes.dex" />
+    </item>
+    <item
         jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.4/3cc424c6eda381bf4aee40dc3ccdecc27b2106aa/rxjava-1.1.4.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="3cc424c6eda381bf4aee40dc3ccdecc27b2106aa">
         <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.4_5a3a6631c30251fbc037d2c3078b93cebd7b7ec3/classes.dex" />
-    </item>
-    <item
-        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_17245ffa2de9ae0f4e5c1149f2d11755c98a7f18/classes.dex" />
     </item>
     <item
         jar="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
@@ -86,11 +107,11 @@
         <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_9e5415e2af4df9df8813b55287ca76e383058055/classes.dex" />
     </item>
     <item
-        jar="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jar="/home/goyalzz/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_97780bd4ca1c0dbf850768fac1083d6b8b1985b6/classes.dex" />
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/home/goyalzz/AndroidStudioProjects/android-rest-example/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.1_108e7b6318b7be4ec11dce735accee831b1d595d/classes.dex" />
     </item>
 
 </items>
