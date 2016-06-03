@@ -6,6 +6,11 @@ import com.kmangutov.restexample.views.ListActivity;
 
 import java.util.List;
 
+import javax.inject.Singleton;
+
+import dagger.Component;
+import dagger.Module;
+import dagger.Provides;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -14,8 +19,9 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by kmangutov on 3/25/15.
+ * Created by Ankush Goyal on 3/25/15.
  */
+
 public class ListPresenter {
 
     ListActivity mView;
@@ -45,7 +51,7 @@ public class ListPresenter {
         call.enqueue(new Callback<List<Post>>() {
             @Override
             public void onResponse(Call<List<Post>> call, Response<List<Post>> response) {
-
+                mView.displayPosts(response.body());
             }
 
             @Override
@@ -53,6 +59,7 @@ public class ListPresenter {
 
             }
         });
+//        call.cancel();
     }
 
     public void postPostsSyncronously() {
@@ -85,25 +92,29 @@ public class ListPresenter {
 
     public void loadPosts() {
 
-        mForum.getApi()
-                .getPosts()
-                .subscribeOn(Schedulers.newThread())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<List<Post>>() {
-                    @Override
-                    public void onCompleted() {
+        try {
+            mForum.getApi()
+                    .getPosts()
+                    .subscribeOn(Schedulers.newThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Observer<List<Post>>() {
+                        @Override
+                        public void onCompleted() {
 
-                    }
+                        }
 
-                    @Override
-                    public void onError(Throwable e) {
+                        @Override
+                        public void onError(Throwable e) {
 
-                    }
+                        }
 
-                    @Override
-                    public void onNext(List<Post> posts) {
-                        mView.displayPosts(posts);
-                    }
-                });
+                        @Override
+                        public void onNext(List<Post> posts) {
+                            mView.displayPosts(posts);
+                        }
+                    });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

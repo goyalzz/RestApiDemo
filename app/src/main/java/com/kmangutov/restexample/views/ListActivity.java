@@ -1,5 +1,6 @@
 package com.kmangutov.restexample.views;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -17,20 +18,22 @@ import com.kmangutov.restexample.services.ForumService;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnItemClick;
 
 
-public class ListActivity extends ActionBarActivity {
+public class ListActivity extends Activity {
 
     @InjectView(R.id.listViewPosts)
     ListView mListViewPosts;
 
     PostsAdapter mPostsAdapter;
 
-    ListPresenter mListPresenter;
-    ForumService mForumService;
+    private ListPresenter mListPresenter;
+    private ForumService mForumService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,15 @@ public class ListActivity extends ActionBarActivity {
 
         mForumService = new ForumService();
         mListPresenter = new ListPresenter(this, mForumService);
+//        mForumService = DaggerForumService().builder().build();
+//        mListPresenter = DaggerListPresenter(this, mForumService).builder()
+        // list of modules that are part of this component need to be created here too
+//                .appModule(new ForumService()) // This also corresponds to the name of your module: %component_name%Module
+//                .netModule(new NetModule("https://api.github.com"))
+//                .build();
+
         mListPresenter.loadPosts();
+//        mListPresenter.loadPostsAsyncronously();
     }
 
     @OnItemClick(R.id.listViewPosts)
